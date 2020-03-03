@@ -1,0 +1,518 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.btn{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    background-color: rgb(182, 182, 182);
+    margin-left: 6%;
+    top: 70px;
+    border-radius: 50%;
+    padding-top: 22px;
+    z-index: 2;
+    box-sizing: border-box;
+}
+.btn.active{
+    background-color: rgb(71, 70, 70);
+    transition: all 0.5s;
+}
+.lines{
+    width: 30px;
+    height: 5px;
+    background-color: rgb(182, 182, 182);
+    transition: all 0.5s;
+}
+.line1{
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 45px;
+    width: 8px;
+    box-shadow: none;
+    z-index: 1;
+}
+.line1.active{
+    display: none;
+}
+.line2{
+    position: absolute;
+    margin-left: 7px;
+    width: 8px;
+    box-shadow: none;
+    z-index: 1;
+    box-shadow: none;
+}
+.line2.active{
+    display: none;
+}
+.line3{
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 15px;
+    background-color: black;
+    transform-origin: 30% 70%;
+}
+.line4{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 15px;
+    background-color: black;
+    transform-origin: 25% 65%;
+}
+.line3.active{
+    transform: rotate(-45deg);
+    background-color: #fff;
+    transition: all 0.3s;
+
+}
+.line4.active{
+    transform: rotate(45deg);
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.btn:hover .line1 {
+    transform: translateX(-38px);
+    transition: 0.4s;
+}
+.btn:hover .line2 {
+    transform: translateX(38px);
+    transition: 0.4s;
+}
+.line{
+    transform: rotateZ(45deg);
+}
+.sidebar{
+    top: 50px;
+    position: fixed;
+    background-color: rgb(187, 187, 187);
+    height: 100%;
+    width: 16.5%;
+    z-index: 2;
+    transition: all 0.4s;
+    left: -16.5%;
+}
+.phototext{
+    margin-left: 0px;
+    margin-top: 7px;
+    margin-bottom: 3px;
+    transition: all 0.5s;
+    font-weight: 580;
+    font-size: 20px;
+}
+.sidebar.active{
+    left: 0%;
+}
+.cartsidebar{
+    position: fixed;
+    height: 65%;
+    width: 250px;
+    background-color: rgb(173, 175, 175);
+    right: 0px;
+    top: -65%;
+    transition: all 0.4s;
+}
+.cartsidebar.active{
+    top: 0%;
+}
+.photo1{
+    width: 560px;
+    height: 410px;
+    margin: 0px;
+    border: none;
+    z-index: 2;
+}
+.jacket1{
+    width: 560px;
+    height: 410px;
+    margin: 0 auto;
+    margin-right: 570px;
+    margin-top: 100px;
+}
+.photos:hover  {
+    cursor: pointer;
+}
+.cube1{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 76px;
+    height: 88px;
+    padding-bottom: 4px;
+    transition: all 0.2s;
+}
+.cube2{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 76px;
+    height: 88px;
+    margin-left: 2px;
+    padding-bottom: 4px;
+    transition: all 0.2s;
+}
+.cube3{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 76px;
+    height: 88px;
+    margin-left: 2px;
+    padding-bottom: 4px;
+    transition: all 0.2s;
+}
+.cube4{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 76px;
+    height: 88px;
+    margin-left: 2px;
+    padding-bottom: 4px;
+    transition: all 0.2s;
+}
+.cube5{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    width: 76px;
+    height: 88px;
+    margin-left: 2px;
+    padding-bottom: 4px;
+    transition: all 0.2s;
+}
+.cube1:hover{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.cube2:hover{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.cube3:hover{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.cube4:hover{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.cube5:hover{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s;
+}.cube6:hover{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.buy{
+    width: 52px;
+    height: 31px;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgb(85, 85, 85);
+    transition: all 0.3s;
+}
+.buy:hover{
+    background-color: rgb(85, 85, 85);
+    color: white;
+    cursor: pointer;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(58, 57, 57);
+    top: 0px;
+    z-index: 3;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.9;
+    padding-left: 30px;
+}
+.logo{
+    color: #fff;
+    letter-spacing: 3.5px;
+    font-size: 26px;
+    font-weight: 900;
+}
+.header.ul{
+    display: flex;
+    justify-content: space-around;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 3.5px;
+    font-size: 20px;
+    width: 42%;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    border: 2px solid none;
+    border-bottom: none;
+    border-top: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.links li{
+    list-style: none;
+}
+.links a:hover{
+    color: rgb(209, 99, 26);
+    transition: all 0.1s;
+}
+.links1 a{
+    color: rgb(24, 23, 23);
+    text-decoration: none;
+    font-weight: 900;
+}
+.links1{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    letter-spacing: 3px;
+    font-size: 22px;
+    margin-top: 60px;
+    transition: all 0.2s;
+}
+.links1 li{
+    list-style: none;
+    padding-top: 80px;
+}
+.links1 a:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.1s;
+}
+.cart{
+    width: 30px;
+    height: 30px;
+    color: white;
+    padding-top: 8px;
+    margin-left: 40px;
+}
+.cart:hover{
+    color: rgb(236, 107, 20);
+    transition: all 0.1s;
+}
+.gray{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(236, 230, 230);
+    margin-top: 110px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.cartsize{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-right: 10px;
+    margin-left: -0px;
+    margin-top: -20px;
+}
+.triangle{
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin-left: -18px;
+    margin-top: 9px;
+}
+.triangle:hover {
+        color: rgb(236, 107, 20);
+        transition: all 0.1s;
+}
+.triangle.active{
+    transform-origin: center;
+    transform: rotate(90deg);
+    transition: all  0.4s;
+}
+.slider{
+    height: 560px;
+    width: 410px;
+    position: relative;
+}
+.insideslider1{
+    position: absolute;
+    height: 560px;
+    width: 410px;
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.4s;
+}
+.insideslider1:nth-child(1) {
+    z-index: 2;
+    opacity: 1;
+}
+
+.phototext{
+    position: absolute;
+    font-size: 36px;
+    font-weight: 500;
+    top: 100px;
+    right: 120px;
+}
+.topictext{
+    width: 500px;
+    position: absolute;
+    text-align: center;
+    top: 182px;
+    right: 80px;
+    font-size: 22px;
+    font-weight: 100;
+}
+.price{
+    position: absolute;
+    top: 286px;
+    right: 280px;
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(223, 43, 11);
+}
+.buy{
+    position: absolute;
+    top: 440px;
+    right: 240px;
+    width: 200px;
+    height: 50px;
+}
+.cubeswrapper{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 140px;
+    height: 40px;
+    top: 336px;
+    right: 270px;
+}
+.cerium{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-top: 260px;
+    right: 1170px;
+    border: 1px solid rgb(134, 134, 134);
+}
+.ceriumlogo{
+    position: absolute;
+    margin-top: 270px;
+    right: 1050px;
+    font-size: 24px;
+}
+.ceriumlogo:hover{
+    color: teal;
+}
+.ceriumtext{
+    position: absolute;
+    margin-top: 306px;
+    right: 746px;
+    width: 400px;
+    height: 60px;
+}
+.essentials{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-top: 400px;
+    right: 1160px;
+    border: 1px solid rgb(134, 134, 134);
+}
+.essentialslogo{
+    position: absolute;
+    margin-top: 410px;
+    right: 1010px;
+    font-size: 24px;
+}
+.essentialslogo:hover{
+    color: teal;
+}
+.essentialstext{
+    position: absolute;
+    margin-top: 446px;
+    right: 746px;
+    width: 400px;
+    height: 60px;
+}
+.lightweight{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-top: 260px;
+    right: 600px;
+    border: 1px solid rgb(134, 134, 134);
+}
+.lightweightlogo{
+    position: absolute;
+    margin-top: 270px;
+    right: 420px;
+    font-size: 24px;
+}
+.lightweightlogo:hover{
+    color: teal;
+}
+.lightweighttext{
+    position: absolute;
+    margin-top: 306px;
+    right: 186px;
+    width: 400px;
+    height: 60px;
+}
+.insulation{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-top: 400px;
+    right: 600px;
+    border: 1px solid rgb(134, 134, 134);
+}
+.insulationlogo{
+    position: absolute;
+    margin-top: 410px;
+    right: 360px;
+    font-size: 24px;
+}
+.insulationlogo:hover{
+    color: teal;
+}
+.insulationtext{
+    position: absolute;
+    margin-top: 446px;
+    right: 186px;
+    width: 400px;
+    height: 60px;
+}
+.middletopic{
+    position: absolute;
+    margin-top: 640px;
+    right: 665px; 
+    font-size: 26px;
+    font-weight: 500;
+}
+.middletext{
+    position: absolute;
+    width: 800px;
+    height: 350px;
+    margin-top: 686px;
+    text-align: center;
+    right: 370px; 
+    font-size: 18px;
+    font-weight: 500;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="logo">JACKETS</div>
+             <ul class="links">
+          <li><a href="index2.html">WINTER</a></li>
+          <li><a href="index3.html">SPRING</a></li>
+          <li><a href="index4.html">AUTUMN</a></li>
+          <li><a href="index5.html">SUMMER</a></li>
+          <li><svg class="cart" id="cart"  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" class="svg-inline--fa fa-shopping-cart fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg></li>
+          <li class="cartsize" id="cartsize">0</li>
+          <li><svg class="triangle" id="triangle" onclick="toggleCartbar()" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path></svg></li>
+            </ul>
+         </header>
+    <div class="bc1" id="bc1"></div>
+    <div class="sidebar" id="sidebar">
+        <ul class="links1">
+            <li><a href="index2.html">HOME</a></li>
+            <li><a href="index3.html">ABOUT</a></li>
+            <li><a href="index4.html">WORK</a></li>
+            <li><a href="index5.html">PROJECTS</a></li>
+               </ul>
+    </div>
+    <div  id="btn" class="btn" onclick="toggleSidebar()" >
+            <div class="line1 lines" id="line1" onclick="toggleSidebar()"></div>
+            <div class="line2 lines" id="line2" onclick="toggleSidebar()"></div>
+            <div class="line3 lines" id="line3" onclick="toggleSidebar()"></div>
+            <div class="line4 lines" id="line4" onclick="toggleSidebar()"></div>
+    </div>
+    <div class="cartsidebar" id="cartsidebar"></div>
+<div class="photoswrapper" id="photoswrapper">
+    <div class="jacket one">
+      <div class="slider" id="slider">
+    <img src="photosfp/arcteryx14.jpg" onClick="change1()" alt="youlox" class="photo1 photos insideslider1" id="photos1">
+    <img src="photosfp/arcteryx12.jpg" onClick="change1()" alt="youlox" class="photo1fake1 photos insideslider1" id="photos1">
+    <img src="photosfp/arcteryx13.jpg" onClick="change1()" alt="youlox" class="photo1fake2 photos insideslider1" id="photos1">
+    <img src="photosfp/arcteryx11.jpg" onClick="change1()" alt="youlox" class="photo1fake3 photos insideslider1" id="photos1">
+    <img src="photosfp/arcteryx15.jpg" onClick="change1()" alt="youlox" class="photo1fake4 photos insideslider1" id="photos1">
+    <img src="photosfp/arcteryx16.jpg" onClick="change1()" alt="youlox" class="photo1fake4 photos insideslider1" id="photos1">
+   </div>
+   <div class="underimagewrapper">
+    <div class="phototext" id="phototext" >ARCTERYX CERIUM LT HOODY</div>
+   
+    <div class="cubeswrapper1">
+    <span class="cube1 cube cubeone1" id="redcube"></span>
+    <span class="cube2 cube cubeone2" id="yellowcube"></span>
+    <span class="cube3 cube cubeone3" id="greencube"></span>
+    <span class="cube4 cube cubeone4" id="orangecube"></span>
+    <span class="cube5 cube cubeone5" id="blackcube"></span>
+    <span class="cube6 cube cubeone6" id="bluecube"></span></div>
+    <span class="price">450$</span>
+    <button class="buy" id="button1">BUY</button>
+   </div>
+       </div>  
+
+       <div class="jacket two">
+         <div class="slider2" id="slider2">
+      <img src="photosfp/arcteryx1.jpg" onClick="change2()" alt="youlox" class="photo2 photos insideslider2" id="photos2">
+      <img src="photosfp/arcteryx2.jpg" onClick="change2()" alt="youlox" class="photo2fake1 photos insideslider2" id="photos2">
+      <img src="photosfp/arcteryx3.jpg" onClick="change2()" alt="youlox" class="photo2fake2 photos insideslider2" id="photos2">
+      <img src="photosfp/arcteryx4.jpg" onClick="change2()" alt="youlox" class="photo2fake3 photos insideslider2" id="photos2">
+      <img src="photosfp/arcteryx5.jpg" onClick="change2()" alt="youlox" class="photo2fake4 photos insideslider2" id="photos2">
+     </div>
+     <div class="underimagewrapper">
+      <div class="phototext" id="phototext">ARCTERYX ATOM AR HOODY</div>
+     
+      
+      <div class="cubeswrapper2">
+      <span class="cube1 cube" id="redcube2"></span>
+      <span class="cube2 cube" id="yellowcube2"></span>
+      <span class="cube3 cube" id="greencube2"></span>
+      <span class="cube4 cube" id="orangecube2"></span>
+      <span class="cube5 cube" id="blackcube2"></span>
+   </div>
+   <span class="price">360$</span>
+    <button class="buy" id="button1">BUY</button>
+          </div>
+         </div>      
+
+
+         <div class="jacket three">
+            <div class="slider3" id="slider3">
+         <img src="photosfp/arcteryx6.jpg" onClick="change3()" alt="youlox" class="photo3 photos insideslider3" id="photos3">
+         <img src="photosfp/arcteryx7.jpg" onClick="change3()" alt="youlox" class="photo3fake1 photos insideslider3" id="photos3">
+         <img src="photosfp/arcteryx8.jpg" onClick="change3()" alt="youlox" class="photo3fake2 photos insideslider3" id="photos3">
+         <img src="photosfp/arcteryx9.jpg" onClick="change3()" alt="youlox" class="photo3fake3 photos insideslider3" id="photos3">
+         <img src="photosfp/arcteryx10.jpg" onClick="change3()" alt="youlox" class="photo3fake4 photos insideslider3" id="photos3">
+        </div>
+        <div class="underimagewrapper">
+         <div class="phototext" id="phototext" >ARCTERYX CERIUM LT JACKET</div>
+        
+         
+         <div class="cubeswrapper3">
+         <span class="cube1 cube cubethree1" id="redcube3"></span>
+         <span class="cube2 cube cubethree2" id="yellowcube3"></span>
+         <span class="cube3 cube cubethree3" id="greencube3"></span>
+         <span class="cube4 cube cubethree4" id="orangecube3"></span>
+         <span class="cube5 cube cubethree5" id="blackcube3"></span>
+      </div>
+      <span class="price">430$</span> 
+      <button class="buy" id="button1">BUY</button>
+      </div>
+            </div>    
+                   
+                   
+
+            <div class="jacket four">
+               <div class="slider4" id="slider4">
+            <img src="photosfp/macai3.jpg" alt="youlox" class="photo4 photos insideslider4" id="photos4">
+            <img src="photosfp/macai2.jpg" alt="youlox" class="photo4fake1 photos insideslider4" id="photos4">
+            <img src="photosfp/macai1.jpg" alt="youlox" class="photo4fake2 photos insideslider4" id="photos4">
+            <img src="photosfp/macai4.jpg" alt="youlox" class="photo4fake3 photos insideslider4" id="photos4">
+           </div>
+           <div class="underimagewrapper">
+            <div class="phototext" id="phototext" >MACAI JACKET MEN'S</div>
+           
+            
+            <div class="cubeswrapper4">
+            <span class="cube1 cube cubefour1" id="redcube4"></span>
+            <span class="cube2 cube cubefour2" id="yellowcube4"></span>
+            <span class="cube3 cube cubefour3" id="greencube4"></span>
+            <span class="cube4 cube cubefour4" id="orangecube4"></span>
+         </div>
+         <span class="price">430$</span>
+          <button class="buy" id="button1">BUY</button>
+         </div>
+               </div> 
+
+
+               <div class="jacket five">
+                  <div class="slider5" id="slider5">
+               <img src="photosfp/nuclei1.jpg" alt="youlox" class="photo5 photos insideslider5" id="photos5">
+               <img src="photosfp/nuclei2.jpg" alt="youlox" class="photo5fake1 photos insideslider5" id="photos5">
+               <img src="photosfp/nuclei3.jpg" alt="youlox" class="photo5fake2 photos insideslider5" id="photos5">
+               <img src="photosfp/nuclei4.jpg" alt="youlox" class="photo5fake3 photos insideslider5" id="photos5">
+              </div>
+              <div class="underimagewrapper">
+               <div class="phototext" id="phototext" >ARCTERYX CERIUM LT JACKET</div>
+               
+               
+               <div class="cubeswrapper5">
+               <span class="cube1 cube cubefive1" id="redcube5"></span>
+               <span class="cube2 cube cubefive2" id="yellowcube5"></span>
+               <span class="cube3 cube cubefive3" id="greencube5"></span>
+               <span class="cube4 cube cubefive4" id="orangecube5"></span>
+            </div>
+            <span class="price">350$</span>
+            <button class="buy" id="button1">BUY</button>
+            </div>
+                  </div>  
+                           
+                           
+
+                  <div class="jacket six">
+                     <div class="slider6" id="slider6">
+                  <img src="photosfp/rush1.jpg" alt="youlox" class="photo6 photos insideslider6" id="photos6">
+                  <img src="photosfp/rush2.jpg" alt="youlox" class="photo6fake1 photos insideslider6" id="photos6">
+                  <img src="photosfp/rush3.jpg" alt="youlox" class="photo6fake2 photos insideslider6" id="photos6">
+                  <img src="photosfp/rush4.jpg" alt="youlox" class="photo6fake3 photos insideslider6" id="photos6">
+                 </div>
+                 <div class="underimagewrapper">
+                  <div class="phototext" id="phototext" >ARCTERYX CERIUM LT JACKET</div>
+                  
+                  
+                  <div class="cubeswrapper6">
+                  <span class="cube1 cube cubesix1" id="redcube6"></span>
+                  <span class="cube2 cube cubesix2" id="yellowcube6"></span>
+                  <span class="cube3 cube cubesix3" id="greencube6"></span>
+                  <span class="cube4 cube cubesix4" id="orangecube6"></span>
+               </div>
+               <span class="price">850$</span>
+               <button class="buy" id="button1">BUY</button>
+               </div>
+                     </div>   
+                               
+                               
+
+                     <div class="jacket seven">
+                        <div class="slider7" id="slider7">
+                     <img src="photosfp/tnf1.png" alt="youlox" class="photo7 photos insideslider7" id="photos">
+                     <img src="photosfp/tnf2.png" alt="youlox" class="photo7fake1 photos insideslider7" id="photos7">
+                     <img src="photosfp/tnf3.png" alt="youlox" class="photo7fake2 photos insideslider7" id="photos7">
+                     <img src="photosfp/tnf4.png" alt="youlox" class="photo7fake3 photos insideslider7" id="photos7">
+                     <img src="photosfp/tnf5.png" alt="youlox" class="photo7fake4 photos insideslider7" id="photos7">
+                     <img src="photosfp/tnf6.png" alt="youlox" class="photo7fake4 photos insideslider7" id="photos7">
+                    </div>
+                    <div class="underimagewrapper">
+                     <div class="phototext" id="phototext"> GOTHAM JACKET III MEN'S</div>
+                    
+                     
+                     <div class="cubeswrapper7">
+                     <span class="cube1 cube cubeseven1" id="redcube7"></span>
+                     <span class="cube2 cube cubeseven2" id="yellowcube7"></span>
+                     <span class="cube3 cube cubeseven3" id="greencube7"></span>
+                     <span class="cube4 cube cubeseven4" id="orangecube7"></span>
+                     <span class="cube5 cube cubeseven5" id="blackcube7"></span>
+                  </div>
+                  <span class="price">300$</span> 
+                  <button class="buy" id="button1">BUY</button>
+                  </div>
+                        </div>   
+
+
+
+                        <div class="jacket eight">
+                           <div class="slider8" id="slider8">
+                        <img src="photosfp/tnf1row3.png" alt="youlox" class="photo8 photos insideslider8" id="photos8" >
+                        <img src="photosfp/tnf4row3.png" alt="youlox" class="photo8fake1 photos insideslider8" id="photos8">
+                        <img src="photosfp/tnf3row3.png" alt="youlox" class="photo8fake2 photos insideslider8" id="photos8">
+                        <img src="photosfp/tnf2row3.png" alt="youlox" class="photo8fake3 photos insideslider8" id="photos8">
+
+                       </div>
+                       <div class="underimagewrapper">
+                        <div class="phototext" id="phototext" >MOUNTAIN LIGHT JACKET</div>
+                        
+                        
+                        <div class="cubeswrapper8">
+                        <span class="cube1 cube cubeeight1" id="redcube8"></span>
+                        <span class="cube2 cube cubeeight2" id="yellowcube8"></span>
+                        <span class="cube3 cube cubeeight3" id="greencube8"></span>
+                        <span class="cube4 cube cubeeight4" id="orangecube8"></span>
+                     </div>
+                     <span class="price">350$</span>
+                     <button class="buy" id="button1">BUY</button>
+                     </div>
+                           </div>    
+
+
+
+                           <div class="jacket nine">
+                              <div class="slider9" id="slider9">
+                           <img src="photosfp/tnf5row3.png" alt="youlox" class="photo9 photos insideslider9" id="photos10">
+                           <img src="photosfp/tnf6row3.png" alt="youlox" class="photo9fake1 photos insideslider9" id="photos9">
+                           <img src="photosfp/tnf7row3.png" alt="youlox" class="photo9fake2 photos insideslider9" id="photos9">
+                           <img src="photosfp/tnf8row3.png" alt="youlox" class="photo9fake3 photos insideslider9" id="photos9">
+                           <img src="photosfp/tnf9row3.png" alt="youlox" class="photo9fake4 photos insideslider9" id="photos9">
+                          </div>
+                          <div class="underimagewrapper">
+                           <div class="phototext" id="phototext">THERMOBALL™ ECO JACKET</div>
+                           
+                           
+                           <div class="cubeswrapper9">
+                           <span class="cube1 cube cubenine1" id="redcube9"></span>
+                           <span class="cube2 cube cubenine2" id="yellowcube9"></span>
+                           <span class="cube3 cube cubenine3" id="greencube9"></span>
+                           <span class="cube4 cube cubenine4" id="orangecube9"></span>
+                           <span class="cube5 cube cubenine5" id="blackcube9"></span>
+                        </div>
+                        <span class="price">200$</span>
+                        <button class="buy" id="button1">BUY</button>
+                        </div>
+                              </div> 
+                                           
+                                           
+
+                              <div class="jacket ten">
+                                 <div class="slider10" id="slider10">
+                              <img src="photosfp/patagonia1row4.jpg" alt="youlox" class="photo10 photos insideslider10" id="photos">
+                              <img src="photosfp/patagonia2row4.jpg" alt="youlox" class="photo10fake1 photos insideslider10" id="photos10">
+                              <img src="photosfp/patagonia3row4.jpg" alt="youlox" class="photo10fake2 photos insideslider10" id="photos10">
+                              <img src="photosfp/patagonia4row4.jpg" alt="youlox" class="photo10fake3 photos insideslider10" id="photos10">
+                             </div>
+                             <div class="underimagewrapper">
+                              <div class="phototext" id="phototext" >ARCTERYX CERIUM LT JACKET</div>
+                             
+                              
+                              <div class="cubeswrapper10">
+                              <span class="cube1 cube cubeten1" id="redcube10"></span>
+                              <span class="cube2 cube cubeten2" id="yellowcube10"></span>
+                              <span class="cube3 cube cubeten3" id="greencube10"></span>
+                              <span class="cube4 cube cubeten4" id="orangecube10"></span>
+                           </div>
+                           <span class="price"> 430$</span> 
+                           <button class="buy" id="button1">BUY</button>
+                           </div>
+                                 </div>  
+                                               
+                                               
+
+                                 <div class="jacket eleven">
+                                    <div class="slider11" id="slider11">
+                                 <img src="photosfp/arcteryx1row4.jpg" alt="youlox" class="photo11 photos insideslider11" id="photos">
+                                 <img src="photosfp/arcteryx2row4.jpg" alt="youlox" class="photo11fake1 photos insideslider11" id="photos11">
+                                 <img src="photosfp/arcteryx3row4.jpg" alt="youlox" class="photo11fake2 photos insideslider11" id="photos11">
+                                 <img src="photosfp/arcteryx4row4.jpg" alt="youlox" class="photo11fake3 photos insideslider11" id="photos11">
+                                 <img src="photosfp/arcteryx5row4.jpg" alt="youlox" class="photo11fake4 photos insideslider11" id="photos11">
+                                </div>
+                                <div class="underimagewrapper">
+                                 <div class="phototext" id="phototext" >THORIUM AR HOODY MEN'S</div>
+                                 
+                                 
+                                 <div class="cubeswrapper11">
+                                 <span class="cube1 cube cubeeleven1" id="redcube11"></span>
+                                 <span class="cube2 cube cubeeleven2" id="yellowcube11"></span>
+                                 <span class="cube3 cube cubeeleven3" id="greencube11"></span>
+                                 <span class="cube4 cube cubeeleven4" id="orangecube11"></span>
+                                 <span class="cube5 cube cubeeleven5" id="blackcube11"></span>
+                              </div>
+                              <span class="price">400$</span>
+                              <button class="buy" id="button1">BUY</button>
+                              </div>
+                                    </div>    
+
+
+
+                                    <div class="jacket twelve">
+                                       <div class="slider12" id="slider12">
+                                    <img src="photosfp/arcteryx6row4.jpg" alt="youlox" class="photo12 photos insideslider12" id="photos12">
+                                    <img src="photosfp/arcteryx7row4.jpg" alt="youlox" class="photo12fake1 photos insideslider12" id="photos12">
+                                    <img src="photosfp/arcteryx8row4.jpg" alt="youlox" class="photo12fake2 photos insideslider12" id="photos12">
+                                    <img src="photosfp/arcteryx9row4.jpg" alt="youlox" class="photo12fake3 photos insideslider12" id="photos12">
+                                   </div>
+                                   <div class="underimagewrapper">
+                                    <div class="phototext" id="phototext" >   ARCTERYX MAGNUS COAT</div>
+                                    
+                                   
+                                    <div class="cubeswrapper12">
+                                    <span class="cube1 cube cubetwelve1" id="redcube12"></span>
+                                    <span class="cube2 cube cubetwelve2" id="yellowcube12"></span>
+                                    <span class="cube3 cube cubetwelve3" id="greencube12"></span>
+                                    <span class="cube4 cube cubetwelve4" id="orangecube12"></span>
+                                 </div> 
+                                 <span class="price">430$</span>
+                                 <button class="buy" id="button1">BUY</button>
+                                 </div>
+                                       </div>     
+</div>
+<div class="gray" id="gray">
+   * Trade-in value based on 2018 15-inch MacBook Pro. Trade-in value will vary based on the condition, year, and configuration of your trade-in device. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Store Gift Card. Not all devices are eligible for credit. More details are available from Apple’s Mac trade‑in partner and Apple’s iPhone, iPad, and Apple Watch trade‑in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply. Payments are based on the received device matching the description you provided when your estimate was made. Apple reserves the right to refuse or limit the quantity of any device for any reason. In the Apple Store: Offer only available on presentation of a valid, government-issued photo ID (local law may require saving this information). Value of your current device may be applied toward purchase of a new Apple device. Offer may not be available in all stores. Some stores may have additional requirements.
+Screen size is measured diagonally.
+1TB = 1 trillion bytes; actual formatted capacity less.
+Battery life varies by use and configuration; see apple.com/batteries for more information.
+$4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.
+$4.99/month after free trial. No commitment. Plan automatically renews after trial until cancelled.
+New subscribers only. $9.99/month after free trial. No commitment. Plan automatically renews after trial until cancelled.
+
+Apple
+ Mac
+Shop and Learn
+Mac
+iPad
+iPhone
+Watch
+TV
+Music
+AirPods
+HomePod
+iPod touch
+Accessories
+Gift Cards
+Services
+Apple Music
+Apple News+
+Apple TV+
+Apple Arcade
+Apple Card
+iCloud
+Account
+Manage Your Apple ID
+Apple Store Account
+iCloud.com
+Apple Store
+Find a Store
+Genius Bar
+Today at Apple
+Apple Camp
+Field Trip
+Apple Store App
+Refurbished and Clearance
+Financing
+Apple Trade In
+Order Status
+Shopping Help
+For Business
+Apple and Business
+Shop for Business
+For Education
+Apple and Education
+Shop for College
+For Healthcare
+Apple in Healthcare
+Health on Apple Watch
+Health Records on iPhone
+For Government
+Shop for Government
+Shop for Veterans and Military
+Apple Values
+Accessibility
+Education
+Environment
+Inclusion and Diversity
+Privacy
+Supplier Responsibility
+About Apple
+Newsroom
+Apple Leadership
+Job Opportunities
+Investors
+Events
+Contact Apple
+More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.
+United States
+Copyright © 2020 Apple Inc. All rights reserved.Privacy Policy Terms of Use Sales and Refunds Legal Site Map
+</div>
+        <script src="main.js"></script>
+</body>
+</html>
