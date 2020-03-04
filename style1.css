@@ -884,7 +884,7 @@ body{
         height: 380px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
     *{
         box-sizing: border-box;
         margin: 0px;
